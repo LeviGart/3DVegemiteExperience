@@ -1,0 +1,282 @@
+@font-face {
+  font-family: Century;
+  src: url("CenturyGothic.802e67a7.ttf");
+}
+
+@font-face {
+  font-family: Avant;
+  src: url("AvantGardeRegular.ee710e39.ttf");
+}
+
+#logo {
+  z-index: 0;
+  position: fixed;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(.8);
+}
+
+canvas {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body {
+  background-color: #fc0;
+  margin: 0;
+}
+
+section {
+  color: #000;
+  z-index: 2;
+  z-index: 2;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+main {
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+}
+
+h1 {
+  color: #e11f1c;
+  padding-bottom: 10px;
+  font-family: Avant;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #000;
+  padding-bottom: 10px;
+  font-family: Avant;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.begin {
+  color: #000;
+  z-index: 2;
+  text-align: center;
+  flex-direction: column;
+  grid-column: 5 / 9;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 100px;
+  font-family: Avant;
+  font-weight: 600;
+  display: flex;
+}
+
+.center {
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  flex-direction: column;
+  grid-column: 4 / 10;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.recipe-frames {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem 0;
+  display: grid;
+}
+
+.frame-caption {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: .5rem;
+  font-size: 16px;
+}
+
+.recipe-frame {
+  background: #e11f1c;
+  border-radius: 8px;
+  flex-direction: column;
+  text-decoration: none;
+  transition: background-color .3s;
+  display: flex;
+  overflow: hidden;
+}
+
+.recipe-frame:hover {
+  cursor: pointer;
+  background-color: #000;
+}
+
+.recipe-frame img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.view-more {
+  color: #fff;
+  text-align: center;
+  background-color: #e11f1c;
+  border-radius: 8px;
+  padding: .7rem 1.5rem;
+  font-family: avant;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color .3s;
+  display: inline-block;
+}
+
+.view-more:hover {
+  background-color: #000;
+}
+
+.left {
+  color: #000;
+  z-index: 2;
+  text-align: left;
+  flex-direction: column;
+  grid-column: 3 / 5;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.right {
+  color: #000;
+  z-index: 2;
+  text-align: left;
+  flex-direction: column;
+  grid-column: 9 / 11;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.end {
+  color: 2a241e;
+  z-index: 2;
+  text-align: center;
+  flex-direction: column;
+  grid-column: 5 / 9;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 2rem 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.end-buttons {
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1em;
+  display: flex;
+}
+
+.end-button {
+  color: #fff;
+  text-align: center;
+  background-color: #e11f1c;
+  border: none;
+  border-radius: 8px;
+  padding: .5rem 1rem;
+  font-family: Avant;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .3s;
+  display: inline-block;
+}
+
+.end-button:hover {
+  background-color: #000;
+}
+
+.created-by {
+  color: #000;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 16px;
+}
+
+header {
+  color: #e11f1c;
+  text-align: left;
+  z-index: 120;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90px;
+  font-family: Avant;
+  font-size: 35px;
+  font-weight: 600;
+  display: flex;
+  position: fixed;
+}
+
+.header-main-logo {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+}
+
+.header-main-logo img {
+  align-self: center;
+  height: 80px;
+}
+
+.header-main-nav {
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  font-family: Avant;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+}
+
+.header-main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.header-main-nav ul li {
+  float: left;
+  display: inline;
+}
+
+.header-main-nav ul li a {
+  height: 100%;
+  padding: 0 20px;
+  font-family: Avant;
+  line-height: 120px;
+  display: block;
+}
+
+.header-main-nav ul li a:hover {
+  color: #fff;
+}
+
+a:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=LeviGartner3DVegemiteWebsite.3a01df49.css.map */
