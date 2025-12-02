@@ -4,111 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Explore the 3D Vegemite Journey, showcasing the legacy and delicious versatility of Australia's favorite spread." />
-  <link rel="icon" type="image/svg+xml" href="/vegemite%20logo%20simple-01-01.90b0c482.svg" />
+  <link rel="icon" type="image/svg+xml" href="./vegemite%20logo%20simple-01-01.90b0c482.svg" />
   <title>3D Vegemite Journey</title>
   <link rel="stylesheet" href="./LeviGartner3DVegemiteWebsite.c1b4d8c2.css" />
   <link rel="stylesheet" href="./LeviGartner3DVegemiteWebsite.3a01df49.css" />
-  <style>
-    /* Prevent scrolling when popup is active */
-    body.popup-active {
-      overflow: hidden;
-    }
-
-    /* Popup styles */
-    #disclaimer-popup {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.75);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      font-family: Helvetica, Arial, sans-serif;
-    }
-
-    .popup-box {
-      background: #1c1c1c;
-      padding: 2rem;
-      border-radius: 10px;
-      max-width: 500px;
-      text-align: center;
-    }
-
-    .popup-box p {
-      margin: 0 0 1rem 0;
-      font-size: 1rem;
-    }
-
-    .close-button {
-      margin-top: 1.5rem;
-      background: none;
-      border: 2px solid white;
-      color: white;
-      padding: 8px 16px;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 5px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .close-button:hover {
-      background: white;
-      color: black;
-    }
-
-    #info-button {
-      position: fixed;
-      top: 30px;
-      left: 100px;
-      width: 30px;
-      height: 30px;
-      background: white;
-      color: black;
-      font-family: Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      font-size: 18px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 30px;
-      cursor: pointer;
-      z-index: 10000;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      transition: background 0.3s, color 0.3s; 
-    }
-
-    #info-button:hover {
-      background: black;
-      color: white;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      #disclaimer-popup {
-        animation: none;
-      }
-    }
-  </style>
 </head>
-
-<body class="popup-active">
-  <!-- Disclaimer Popup -->
-  <div id="disclaimer-popup">
-    <div class="popup-box">
-      <p>This project is for educational and portfolio purposes only.</p>
-      <p>It is not affiliated with Vegemite or the Bega Company.</p>
-      <p>All images and logos are property of Vegemite and Bega.</p>
-      <button class="close-button" onclick="closeDisclaimer()">Close</button>
-    </div>
-  </div>
-
-  <!-- Info Icon -->
-  <div id="info-button" onclick="reopenDisclaimer()" title="View Disclaimer">i</div>
 
   <canvas id="bg"></canvas>
 
